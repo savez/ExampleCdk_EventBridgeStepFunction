@@ -1,0 +1,27 @@
+{
+  "name": "poc_aws_middleware",
+  "version": "0.1.0",
+  "bin": {
+    "poc_aws_middleware": "bin/poc_aws_middleware.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest",
+    "locally": "node -e \"console.log(require('./src/start').handler({}));\""
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.55.0",
+    "aws-cdk": "1.55.0",
+    "jest": "^25.5.0",
+    "@aws-cdk/aws-events": "^1.55.0",
+    "@aws-cdk/aws-events-targets": "^1.55.0",
+    "@aws-cdk/aws-lambda": "^1.55.0",
+    "@aws-cdk/aws-stepfunctions": "^1.55.0",
+    "@aws-cdk/aws-stepfunctions-tasks": "^1.55.0",
+    "@aws-cdk/core": "1.55.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.723.0"
+  }
+}
